@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art1San | Ексклюзивні Меблі</title>
+    <style>
+        /* Базові налаштування (кольори, шрифти) */
+        :root {
+            --primary-color: #2c2c2c;
+            --accent-color: #8b5a2b; /* Колір дерева */
+            --bg-color: #faf9f6;
+            --text-color: #333333;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* Шапка сайту */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            color: #cccccc;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* Головний банер */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        /* Галерея товарів (Вітрина) */
+        .catalog {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Ефект підняття при наведенні мишки */
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+        }
+
+        .card-info p {
+            color: #666;
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Підвал сайту */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Art1San</h1>
+        <p>Майстерня сучасних меблів</p>
+    </header>
+
+    <div class="hero">
+        <h2>Естетика в кожній деталі</h2>
+        <p>Перегляньте наше портфоліо. Тільки якісні матеріали та правильний розкрій.</p>
+    </div>
+
+    <div class="catalog">
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267" alt="Стілець">
+                <div class="card-info">
+                    <h3>Стілець "Kioto"</h3>
+                    <p>Масив ясена, емаль</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1" alt="Стіл">
+                <div class="card-info">
+                    <h3>Обідній стіл "Arlo"</h3>
+                    <p>Дуб Артізан, металокаркас</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503602642458-232111445657" alt="Табурет">
+                <div class="card-info">
+                    <h3>Табурет "Gerry"</h3>
+                    <p>Мінімалізм, натуральне дерево</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126" alt="Комод">
+                <div class="card-info">
+                    <h3>Комод "Terra"</h3>
+                    <p>ЛДСП 16мм, фурнітура Blum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Art1San Woodwork. Всі права захищено.</p>
+    </footer>
+
+</body>
+</html>
