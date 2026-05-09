@@ -56,14 +56,14 @@
 - 15%: ретест “просілих” SKU після покращення карток.
 
 ## GitHub-посилання для запуску автоматизації
-- https://github.com/OlegOKovalyov/ua-marketplace
-- https://github.com/sinefineinfinitum/prom-import
-- https://github.com/Archer-uaf/autodelivery_bot
-- https://github.com/Teeeam-In/Bot-API-Marketplace
-- https://github.com/romirom11/epicentrk-api
+- https://github.com/OlegOKovalyov/ua-marketplace — загальні інструменти інтеграції та роботи з маркетплейсами.
+- https://github.com/sinefineinfinitum/prom-import — імпорт товарів і синхронізація каталогу для Prom.
+- https://github.com/Archer-uaf/autodelivery_bot — автоматизація операцій доставки та обробки замовлень.
+- https://github.com/Teeeam-In/Bot-API-Marketplace — API-бот для рутинних дій із товарами/замовленнями.
+- https://github.com/romirom11/epicentrk-api — інтеграція з EpicentrK API для керування даними.
 
 ## Параметри для персоналізації
-Щоб перезібрати план під твою нішу у форматі “що робити щодня + які SKU пушити першими”, передай:
+Щоб перезібрати план під твою нішу у форматі “що робити щодня + які SKU пушити першими”, створи Issue в цьому репозиторії та вкажи:
 1. Категорію товару
 2. Бюджет на місяць
 3. Кількість SKU
