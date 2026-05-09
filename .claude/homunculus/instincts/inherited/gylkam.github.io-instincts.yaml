@@ -1,0 +1,322 @@
+# Instincts generated from https://github.com/gylkam/gylkam.github.io
+# Generated: 2026-05-09T09:01:32.388Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: gylkam.github.io-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Commit Length
+
+## Action
+
+Write moderate-length commit messages (~63 characters)
+
+## Evidence
+
+- Average commit message length: 63 chars
+- Based on 3 commits
+
+---
+id: gylkam.github.io-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: gylkam.github.io-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: gylkam.github.io-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: gylkam.github.io-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: gylkam.github.io-workflow-update-readme-documentation
+trigger: "when doing update readme documentation"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Workflow Update Readme Documentation
+
+## Action
+
+Follow the update-readme-documentation workflow:
+1. Edit README.md to add or clarify information.
+2. Commit changes with a descriptive message.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: README.md
+
+---
+id: gylkam.github.io-instinct-file-naming-camelCase
+trigger: "When creating a new Python file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct File Naming CamelCase
+
+## Action
+
+Name the file using camelCase (e.g., myModule.py)
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: gylkam.github.io-instinct-function-naming-camelCase
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Function Naming CamelCase
+
+## Action
+
+Name the function using camelCase (e.g., processData())
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: gylkam.github.io-instinct-class-naming-pascalCase
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Class Naming PascalCase
+
+## Action
+
+Name the class using PascalCase (e.g., AgentManager)
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: gylkam.github.io-instinct-constant-naming-screaming-snake-case
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Constant Naming Screaming Snake Case
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE (e.g., MAX_RETRIES)
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: gylkam.github.io-instinct-import-style-relative
+trigger: "When importing modules within the package"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Import Style Relative
+
+## Action
+
+Use relative imports (e.g., from .module import ClassName)
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: gylkam.github.io-instinct-export-style-named
+trigger: "When exporting functions or classes from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Export Style Named
+
+## Action
+
+Use named exports (explicitly specify what is exported)
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: gylkam.github.io-instinct-test-location-separate
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.testLocation: separate
+
+---
+id: gylkam.github.io-instinct-commit-prefix-feat
+trigger: "When committing a new feature or significant change"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Commit Prefix Feat
+
+## Action
+
+Prefix the commit message with 'feat:'
+
+## Evidence
+
+- Seen in commit: 'feat: add GYLKA Business AI multi-agent system (7 agents, CrewAI)'
+- Pattern in commits.prefixes: feat
+
+---
+id: gylkam.github.io-instinct-commit-descriptive-message
+trigger: "When committing changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Commit Descriptive Message
+
+## Action
+
+Write a descriptive commit message summarizing the change
+
+## Evidence
+
+- Seen in commit: 'Add 30-day Rozetka Prom EpicentrK execution plan to README'
+- Pattern in commit examples
+
+---
+id: gylkam.github.io-instinct-update-readme-workflow
+trigger: "When someone wants to add, clarify, or update documentation or plans in the README"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: gylkam/gylkam.github.io
+---
+
+# Gylkam.github.io Instinct Update Readme Workflow
+
+## Action
+
+Edit README.md to add or clarify information, then commit changes with a descriptive message
+
+## Evidence
+
+- Workflow: update-readme-documentation
+- Seen in commit: 'Clarify automation links and personalization submission in README'
+
