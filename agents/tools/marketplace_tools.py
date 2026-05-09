@@ -59,7 +59,7 @@ def search_prom_prices(query: str) -> str:
         )
 
     except Exception as exc:  # noqa: BLE001
-        return f"Помилка при пошуку на Prom.ua: {exc}"
+        return f"Помилка при пошуку '{query}' на Prom.ua: {exc}"
 
 
 @tool("Аналіз конкурентів на Rozetka")
@@ -112,7 +112,7 @@ def analyze_rozetka_competitors(category_url: str) -> str:
         )
 
     except Exception as exc:  # noqa: BLE001
-        return f"Помилка при аналізі Rozetka: {exc}"
+        return f"Помилка при аналізі Rozetka для '{category_url}': {exc}"
 
 
 # ---------------------------------------------------------------------------
@@ -328,7 +328,7 @@ def analyze_reviews(reviews_text: str) -> str:
         ),
         "якість": (
             "Дуже шкода, що товар виявився неякісним. "
-            "Просимо надіслати фото браку у повідомлення — "
+            "Просимо надіслати фото браку у повідомленні — "
             "організуємо заміну або повернення коштів."
         ),
         "відповідність": (

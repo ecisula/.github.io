@@ -27,6 +27,10 @@ class GylkaBusinessCrew:
     """
     GYLKA Business AI Crew — команда з 7 спеціалізованих агентів
     для автоматизації та зростання маркетплейс-бізнесу.
+
+    Декоратор @CrewBase автоматично завантажує YAML-файли, вказані в
+    agents_config / tasks_config, і робить їх доступними як словники
+    (self.agents_config["..."], self.tasks_config["..."]).
     """
 
     agents_config = str(_CONFIG_DIR / "agents.yaml")
